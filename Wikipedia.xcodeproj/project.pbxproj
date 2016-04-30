@@ -5075,7 +5075,7 @@
 						TestTargetID = D4991434181D51DE00E6073C;
 					};
 					D4991434181D51DE00E6073C = {
-						DevelopmentTeam = AKK7J2GV64;
+						DevelopmentTeam = 32B4Z2NW33;
 						SystemCapabilities = {
 							com.apple.SafariKeychain = {
 								enabled = 1;

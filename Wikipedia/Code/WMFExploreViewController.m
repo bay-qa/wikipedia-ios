@@ -101,7 +101,9 @@ NS_ASSUME_NONNULL_BEGIN
         self.navigationItem.titleView.accessibilityLabel     = MWLocalizedString(@"home-accessibility-label", nil);
         self.navigationItem.titleView.accessibilityTraits   |= UIAccessibilityTraitHeader;
         self.navigationItem.leftBarButtonItem                = [self settingsBarButtonItem];
+        self.navigationItem.leftBarButtonItem.accessibilityIdentifier = @"settings_button";
         self.navigationItem.rightBarButtonItem               = [self wmf_searchBarButtonItem];
+        self.navigationItem.rightBarButtonItem.accessibilityIdentifier = @"search_button";
     }
     return self;
 }

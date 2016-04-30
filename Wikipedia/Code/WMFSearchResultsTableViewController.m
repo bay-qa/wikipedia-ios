@@ -22,6 +22,7 @@
     [self.tableView registerNib:[WMFArticleListTableViewCell wmf_classNib] forCellReuseIdentifier:[WMFArticleListTableViewCell identifier]];
 
     self.tableView.estimatedRowHeight = 60.0f;
+    self.tableView.accessibilityIdentifier = @"search_results";
 }
 
 - (void)setDataSource:(WMFSearchDataSource*)dataSource {

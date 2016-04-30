@@ -216,6 +216,9 @@ static NSUInteger const kWMFMinResultsBeforeAutoFullTextSearch = 12;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.closeButton.accessibilityIdentifier = @"close_button";
+    self.searchField.accessibilityIdentifier = @"search_field";
 
     [self configureSearchField];
     [self configureLanguageButtons];
