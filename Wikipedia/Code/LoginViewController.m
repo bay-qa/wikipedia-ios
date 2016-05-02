@@ -51,6 +51,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.usernameField.accessibilityIdentifier = @"username_field";
+    self.passwordField.accessibilityIdentifier = @"password_field";
+    
     @weakify(self)
     UIBarButtonItem * xButton = [UIBarButtonItem wmf_buttonType:WMFButtonTypeX handler:^(id sender){
         @strongify(self)
@@ -63,6 +66,7 @@
         [self save];
     }];
     self.navigationItem.rightBarButtonItem = self.doneButton;
+    self.navigationItem.rightBarButtonItem.accessibilityIdentifier = @"log_in_button";
 
     self.successBlock = ^(){};
     self.failBlock = ^(){};
